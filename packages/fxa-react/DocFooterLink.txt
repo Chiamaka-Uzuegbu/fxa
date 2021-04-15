@@ -1,0 +1,8 @@
+Documentation for:
+(fix(fxa-settings)-footer-links-clickable-spaces-to-fit-the-width-of-the-texts)
+
+Changes to the footer link clickable spaces was made on the patch I created from the fxa repo after forking and cloning.
+I made sure to check for compatibility both on the mobile view and 
+the desktop view, changing the sizes at intervals while testing.
+The clickable spaces now fit the text-width and it is responsive.
+Issue #7012
