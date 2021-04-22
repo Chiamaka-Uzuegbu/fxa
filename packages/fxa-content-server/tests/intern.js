@@ -44,13 +44,14 @@ const fxaProduction = !!args.fxaProduction;
 const fxaDevBox = !!args.fxaDevBox;
 
 const fxaToken = args.fxaToken || 'http://';
-const asyncTimeout = parseInt(args.asyncTimeout || 5000, 10);
+const asyncTimeout = parseInt(args.asyncTimeout || 10000, 10);
 
 // On Circle, we bail after the first failure.
 // args.bailAfterFirstFailure comes in as a string.
 const bailAfterFirstFailure = args.bailAfterFirstFailure === 'true';
 
 const testProductId = args.testProductId || 'prod_GqM9ToKK62qjkK';
+const testPlanId = args.testPlanId || 'plan_GqM9N6qyhvxaVk';
 
 // Intern specific options are here: https://theintern.io/docs.html#Intern/4/docs/docs%2Fconfiguration.md/properties
 const config = {
@@ -96,12 +97,15 @@ const config = {
     drivers: [
       {
         name: 'firefox',
-        version: '0.26.0',
+
+        // Pulls from https://github.com/mozilla/geckodriver/releases/
+        version: '0.29.1',
       },
     ],
   },
 
   testProductId,
+  testPlanId,
 };
 
 if (args.grep) {
