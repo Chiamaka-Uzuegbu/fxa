@@ -28,7 +28,7 @@ export const Footer = () => {
         <LinkExternal
           data-testid="link-privacy"
           href="https://www.mozilla.org/en-US/privacy/websites/"
-          className="transition-standard w-full text-xs my-3 hover:text-grey-500 hover:underline mobileLandscape:my-0 mobileLandscape:w-max mobileLandscape:mx-10 mobileLandscape:self-end"
+          className="transition-standard w-full text-xs my-3 hover:text-grey-500 hover:underline mobileLandscape:my-0 mobileLandscape:w-auto mobileLandscape:mx-10 mobileLandscape:self-end"
         >
           Website Privacy Notice
         </LinkExternal>
@@ -37,7 +37,7 @@ export const Footer = () => {
         <LinkExternal
           data-testid="link-terms"
           href="https://www.mozilla.org/en-US/about/legal/terms/services/"
-          className="transition-standard w-full text-xs mobileLandscape:self-end hover:text-grey-500 hover:underline mobileLandscape:w-max"
+          className="transition-standard w-full text-xs mobileLandscape:self-end hover:text-grey-500 hover:underline mobileLandscape:w-auto"
         >
           Terms of Service
         </LinkExternal>
